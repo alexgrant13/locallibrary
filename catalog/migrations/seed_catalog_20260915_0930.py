@@ -188,7 +188,7 @@ class Migration(migrations.Migration):
     # with the name of your most recent migration file in the dependencies list below
     # before running this migration
     dependencies = [
-        ('catalog', '0002_language'),
+        ("catalog", "0001_alter_book_options_book_language"),
     ]
 
     operations = [
