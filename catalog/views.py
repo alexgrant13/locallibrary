@@ -18,7 +18,7 @@ def index(request):
 
     # Challenge
     num_genres_keyword = Genre.objects.filter(name__icontains='word').count()
-    num_books_keyword = Book.objects.filter(name__icontains='word').count()
+    num_books_keyword = Book.objects.filter(title__icontains='word').count()
 
     context = {
         'num_books': num_books,
